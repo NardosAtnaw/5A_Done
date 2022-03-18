@@ -24,15 +24,15 @@
             <li>
               <a href=""><img src="../assets/Icons/facebook.svg" alt="" /> </a>
             </li>
-            <li>
+            <!-- <li>
               <a href=""><img src="../assets/Icons/google.svg" alt="" /> </a>
-            </li>
+            </li> -->
             <li>
-              <a href=""><img src="../assets/Icons/linkedin.svg" alt="" /> </a>
+              <a href="https://www.linkedin.com/company/5a-jurist-consultancy-group/about/?viewAsMember=true"><img src="../assets/Icons/linkedin.svg" alt="" /> </a>
             </li>
-            <li>
+            <!-- <li>
               <a href=""><img src="../assets/Icons/youtube.svg" alt="" /> </a>
-            </li>
+            </li> -->
           </ul>
           <div class="social"></div>
         </div>
@@ -156,8 +156,7 @@
                 <div class="corp-link">
                   <li><a href="partners">Partners</a></li>
                   <li><a href="partners">Leader</a></li>
-                  <li>
-                    <a href="partners"> Additional Team</a>
+                  <li><a href="partners"> Additional Team</a>
                   </li>
                 </div>
               </ul>
@@ -490,6 +489,9 @@ export default {
                     width: 0.5rem;
                   }
                 }
+                .double-link{
+                    display: none;
+                  }
               }
             }
           }

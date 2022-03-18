@@ -27,17 +27,17 @@
                   ><img src="../assets/Icons/facebook.svg" alt="" />
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a href=""><img src="../assets/Icons/google.svg" alt="" /> </a>
-              </li>
+              </li> -->
               <li>
-                <a href=""
+                <a href="https://www.linkedin.com/company/5a-jurist-consultancy-group/about/?viewAsMember=true"
                   ><img src="../assets/Icons/linkedin.svg" alt="" />
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a href=""><img src="../assets/Icons/youtube.svg" alt="" /> </a>
-              </li>
+              </li> -->
             </ul>
             <div class="social"></div>
           </div>
