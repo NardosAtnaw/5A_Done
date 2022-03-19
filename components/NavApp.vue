@@ -459,7 +459,7 @@ export default {
               color: #fff;
             }
             .sublinks,
-            .sublinks2 {
+            .sublinks2, .sublinks3 {
               margin: 1rem 0;
 
               color: $A-green;
