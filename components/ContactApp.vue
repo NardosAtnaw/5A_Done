@@ -54,7 +54,7 @@
             This is the contact form; Please make sure to fill it in order for
             you to reach us
           </p>
-          <form action="" class="myform">
+          <form method="POST" action="https://formsubmit.co/5Aadmin@5alawoffice.com" enctype="multipart/form-data" class="myform">
             <img
               class="contact-decor"
               src="../assets/Icons/decor2.svg"
@@ -68,8 +68,7 @@
                 placeholder="Frist Name"
               />
               <input
-                type="email"
-                name="name"
+                type="email" name="email" 
                 class="line right-margin"
                 placeholder="Email"
               />
@@ -77,42 +76,29 @@
               <input
                 class="line right-margin"
                 type="text"
-                name="area"
-                placeholder="Select Area"
+                name="_subject"
+                placeholder="Subject"
               />
-            
               <input
                 type="file"
                 id="avatar"
                 name="avatar"
                 accept="image/png, image/jpeg"
               />
-            
-            </div>
-          <span>
-            <p>It is confidential to write your message here . </p>
-         </span>
-            <textarea class="line" name="Message" id="" cols="30" rows="5">
-Message 
-
-            </textarea>
-            <!-- <div class="list-areas">
-                <div>
-                  <input type="checkbox" id="check1" name="practice1" checked />
-                  <label for="scales">Practice1</label>
-                </div>
-
-                <div>
-                  <input type="checkbox" id="check2" name="practice2" />
-                  <label for="horns">Practice2</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="check2" name="practice3" />
-                  <label for="horns">Practice3</label>
-                </div>
+              <input type="hidden" name="_template" value="basic">
+              <!-- <div class="file-upload">
+                <input type="file" />
+                <i class="fa fa-arrow-up"></i>
               </div> -->
+            </div>
+            <span>
+              <p>It is confidential to write your message here .</p>
+            </span>
+            <textarea class="line" name="Message" id="" cols="30" rows="5">
+Message </textarea>
+            
             <div class="submit-buttons">
-              <a class="btn btn-white" href="#">SEND MESSAGE</a>
+              <button type="submit" class="btn btn-white">SEND MESSAGE</button>
             </div>
           </form>
         </div>
@@ -161,14 +147,55 @@ export default {};
         }
         .myform {
           place-content: center;
-span{
- p{
-   color: $A-green;
-   text-align: left;
-  margin-top: 1rem;
-  margin-left: .5rem;  
- }
-}
+          span {
+            p {
+              color: $A-green;
+              text-align: left;
+              margin-top: 1rem;
+              margin-left: 0.5rem;
+            }
+          }
+          .file-upload{
+
+    height:20px;
+    width:20px;
+    border-radius: 100px;
+    position:relative;
+    
+    display:flex;
+    justify-content:center;
+    align-items: center;  
+
+    border:4px solid #FFFFFF;
+    overflow:hidden;
+    background-image: linear-gradient(to bottom, #2590EB 50%, #FFFFFF 50%);
+    background-size: 100% 200%;
+    transition: all 1s;
+    color: #FFFFFF;
+    font-size:100px;
+
+    input[type='file']{
+
+      height:20px;
+      width:20px;
+      position:absolute;
+      top:0;
+      left:0;
+      opacity:0;
+      cursor:pointer;
+
+    }
+
+    &:hover{
+
+      background-position: 0 -100%;
+
+      color:#2590EB;
+
+    }
+
+
+  }
           input,
           textarea {
             background: $A-darkerblue;
@@ -179,7 +206,6 @@ span{
             margin-top: 1rem;
             border: none;
             border-bottom: 1px solid #fff;
-            
           }
           input {
             color: #fff;
@@ -187,7 +213,6 @@ span{
             &::placeholder {
               color: #fff;
             }
-           
           }
           input[type="text"],
           input[type="email"] {

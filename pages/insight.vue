@@ -50,9 +50,12 @@
             data-aos-anchor-placement="top-center"
             v-for="post in allData" :key="post.id"
           >
-            <img class="pub-img" :src="'http://localhost:8080/5A/post_img' + post.post_image" alt="" />
+       <a href="blog"> 
+            <img class="pub-img" :src="'https://5alawoffice.com/5Adb/post_img/' + post.post_image" alt="" />
+         <!-- :src="'http://localhost:8080/5A/post_img/' + post.post_image" --></a>
             <div class="pub-title">{{ post.post_title }}</div>
           </div>
+        
          
         </div>
       </div>
@@ -110,7 +113,7 @@ export default {
       try {
         await axios
           .post(
-            "https://5alawoffice.com/5Aback/",
+            "/api/",
             {
               action: "search",
               term: this.searchTerm,
@@ -549,8 +552,7 @@ export default {
               display: grid;
               place-items: center;
               position: relative;
-              margin-top: 2rem;
-
+              margin-top: 2rem; 
               .pub-img {
                 // position: relative;
               }
@@ -560,7 +562,6 @@ export default {
                 margin-left: 2rem;
                 margin-right: 2rem;
                 @extend .title;
-
                 text-align: center;
                 color: #fff;
               }
@@ -596,35 +597,7 @@ export default {
         // place-items: center;
 
         margin-top: 5rem;
-        .input-container {
-          display: flex;
-
-          flex-direction: row-reverse;
-          width: 15.38rem;
-          margin-bottom: 2.13rem;
-
-          .search-button {
-            background: none;
-            border: none;
-            padding: 0;
-            margin: 0;
-          }
-          .icon {
-            padding: 10px;
-            min-width: 50px;
-            // background: #fff;
-            border: 2px solid $A-darkerblue;
-            border-left: none;
-          }
-          .input-field {
-            width: 100%;
-            padding: 10px;
-            outline: none;
-            background: none;
-            border-color: #10284a;
-            border-right: none;
-          }
-        }
+        
         .search-object {
           margin-top: 0rem;
           margin-bottom: 5rem;
@@ -708,7 +681,7 @@ export default {
   }
   @include responsive($lg) {
     .publication-post {
-      margin-top: 10rem;
+      margin-top: 8rem;
       .container {
         gap: 3rem;
         .publcation-wrapper {
@@ -728,7 +701,6 @@ export default {
   }
   @include responsive($xl) {
     .publication-post {
-      margin-top: 10rem;
       .container {
         .publcation-wrapper {
           padding-left: 5rem;
@@ -762,6 +734,7 @@ export default {
         color: $A-darkerblue;
       }
       .wrapper {
+        
         .lists {
           display: grid;
           place-items: center;
@@ -803,7 +776,7 @@ export default {
       }
     }
   }
-  @include responsive($md) {
+  @include responsive($lg) {
     .other-publication {
       .container {
         .wrapper {

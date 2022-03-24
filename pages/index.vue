@@ -1,6 +1,7 @@
 <template>
   <div class="body-main">
     <HeaderApp />
+  
     <section class="description">
       <div class="container">
         <div class="desc">
@@ -22,6 +23,7 @@
         <div class="hover"></div>
       </div>
     </section>
+      <Search  class="border-soild border-2 border-gray-500" width="300px" height="500px"/>
     <section class="awards">
       <div class="container">
         <div
@@ -36,7 +38,6 @@
         >
           <img src="../assets/Image/A2.svg" alt="" />
           <img src="../assets/Image/A1.svg" alt="" />
-
           <img src="../assets/Image/award.svg" alt="" />
           <!-- <img src="../assets/Image/award2.svg" alt="" /> -->
           <img src="../assets/Image/award2.svg" alt="" />
@@ -511,6 +512,8 @@
           please follow this link.
         </p>
         <div class="wrapper">
+          <a href="blog">
+
           <div
             class="blog-post"
             data-aos="slide-up"
@@ -539,6 +542,9 @@
               <img src="../assets/Icons/poll.svg" alt="" />
             </div>
           </div>
+          </a>
+          <a href="news">
+
           <div
             class="news"
             data-aos="slide-up"
@@ -555,7 +561,7 @@
                 media regulation that were governed by two different
                 legislations. Previously, access to information and the print
                 media was regulated under Proclamation 590//2008, while the
-                broadcast media was regulated under Proclamation 533/2007. 
+                broadcast media was regulated under Proclamation 533/2007.
               </p>
               <div class="link">
                 <a href="#">
@@ -565,6 +571,9 @@
               </div>
             </div>
           </div>
+          </a>
+          <a href="journal">
+
           <div
             class="blog-post"
             data-aos="slide-up"
@@ -579,7 +588,11 @@
               Proclamation in Art 84 provides that defamation shall only entail
               civil liability and shall not entail criminal responsibility. This
               will have far reaching significance for the progress of media
-              freedom in the country. 
+              will have far reaching significance for the progress of media
+              freedom in the country. civil liability and shall not entail criminal responsibility. This
+              will have far reaching significance for the progress of media
+              will have far reaching significance for the progress of media
+              freedom in the country.
             </p>
             <div class="link">
               <a href="#">
@@ -591,6 +604,7 @@
               <img src="../assets/Icons/poll.svg" alt="" />
             </div>
           </div>
+          </a>
         </div>
       </div>
     </section>
@@ -601,6 +615,7 @@
 <script>
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 export default {
   data() {
     return {
@@ -608,6 +623,7 @@ export default {
       searchTerm: "",
     };
   },
+
   mounted() {
     AOS.init({
       duration: 900,
@@ -627,6 +643,10 @@ export default {
       s1.setAttribute("crossorigin", "*");
       s0.parentNode.insertBefore(s1, s0);
     })();
+
+    // const searchClient =algoliasearch(
+    // '',''
+    // );
 
     const menu = document.querySelector(".menu");
     const sidebar = document.querySelector(".links-container");
@@ -687,7 +707,7 @@ export default {
       try {
         await axios
           .post(
-            "https://5alawoffice.com/5Aback/",
+            "/api/",
             {
               action: "search",
               term: this.searchTerm,
@@ -706,7 +726,7 @@ export default {
       try {
         await axios
           .post(
-            "https://5alawoffice.com/5Aback/",
+            "/api/",
             {
               action: "fetchAll",
             },
@@ -726,6 +746,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .body-main {
+ 
   .show-links,
   .show-links2 {
     display: flex !important;
@@ -2128,6 +2149,7 @@ export default {
       }
       .news {
         margin-top: 7rem;
+        width: 21rem;
         .title {
           background: $A-lightblue;
           padding: 1rem;
@@ -2169,6 +2191,7 @@ export default {
       }
       .blog-post {
         margin-top: 4rem;
+        width: 21rem;
         background: $A-lightblue;
         padding: 2rem;
         h2 {
@@ -2212,12 +2235,25 @@ export default {
       }
     }
   }
-  @include responsive($lg) {
+
+   @include responsive($md) {
     .blog {
       .container {
         .wrapper {
           gap: 1rem;
-          display: flex;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    }
+  }
+  @include responsive($lg) {
+    .blog {
+      .container {
+        .wrapper {
+          gap: .5rem;
+             display: grid;
+          grid-template-columns: 1fr 1fr ;
         }
       }
     }
@@ -2226,6 +2262,14 @@ export default {
     .blog {
       margin-top: 10rem;
       .container {
+        .wrapper {
+         
+             display: grid;
+          grid-template-columns: 1fr 1fr 1fr  ;
+          .blog-post, .news{
+            width: 25rem;
+          }
+        }
         .sub-title {
           margin-top: 1.5rem;
           font-size: 1rem;

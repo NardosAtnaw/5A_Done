@@ -77,7 +77,7 @@
                   </li>
 
                   <li>
-                    <a href="power"> Pactice Area</a>
+                    <a href="practice"> Pactice Area</a>
                     <ul class="double-link">
                       <div class="links2">
                         <li><a href="coporate">Corporate and Commercial</a></li>
@@ -161,9 +161,9 @@
                 <div class="corp-link">
                   <li><a href="partners">Partners</a></li>
                   <li><a href="partners">Leader</a></li>
-                  <li>
-                    <a href="partners"> Additional Team</a>
-                  </li>
+                  <!-- <li>
+                    <a href="#additional"> Additional Team</a>
+                  </li> -->
                 </div>
               </ul>
             </li>
@@ -177,7 +177,7 @@
                     <a href="publication"> Publication</a>
                   </li>
 
-                  <!-- <li><a href="journal">Journal</a></li> -->
+                  <li><a href="journal">Journal</a></li>
                 </div>
               </ul>
             </li>

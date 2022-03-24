@@ -270,7 +270,7 @@
       </div>
     </section>
 
-        <section class="leader">
+        <section class="leader" id="additional">
       <div class="container">
         <h2>ADDITIONAL TEAM</h2>
         <!-- <p> </p> -->

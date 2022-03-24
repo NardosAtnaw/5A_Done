@@ -110,195 +110,10 @@ Collaborate with key regulatory agencies and state-owned public enterprises for 
         </div>
       </div>
     </section>
-    <section class="contact">
-      <div class="container">
-        <div class="contact-box">
-          <div class="contact-hours">
-            <h2>HOURS FOR CONTACT</h2>
-            <p class="desc-p">
-              This is the contact hours; please make sure your time is in sync
-              with ours.
-            </p>
-            <div class="time-contact">
-              <img src="../assets/Icons/time.svg" alt="" />
-              <p>Monday-Thursday 6:00-19:00 GMT</p>
-            </div>
-            <div class="time-contact">
-              <img src="../assets/Icons/time.svg" alt="" />
-              <p>Firday-Staurday 7:00-18:00 GMT</p>
-            </div>
-
-            <div class="socials">
-              <img src="../assets/Icons/decor.svg" alt="" />
-              <ul>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/mail.svg" alt="" />
-                    <p>Contact@5alawoffice.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/linkedin.svg" alt="" />
-                    <p>5Alawoffice@linkedin.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/facebook.svg" alt="" />
-                    <p>5Alawoffice@facebook.com</p></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="../assets/Icons/phone.svg" alt="" />
-                    <p>0116504949, Fax – 0116505758</p></a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="contact-form">
-            <h2>CONTACT US</h2>
-            <p>
-              This is the contact form; Please make sure to fill it in order for
-              you to reach us
-            </p>
-            <form action="" class="myform">
-              <img
-                class="contact-decor"
-                src="../assets/Icons/decor2.svg"
-                alt=""
-              />
-              <div class="input-box">
-                <input
-                  type="text"
-                  name="name"
-                  class="line right-margin"
-                  placeholder="Frist Name"
-                />
-                <input
-                  type="email"
-                  name="name"
-                  class="line right-margin"
-                  placeholder="Email"
-                />
-
-                <input
-                  class="line right-margin"
-                  type="text"
-                  name="area"
-                  placeholder="Select Area"
-                />
-                <input
-                  type="text"
-                  name="email"
-                  class="line right-margin"
-                  placeholder="Attachement"
-                />
-              </div>
-              <textarea class="line" name="Message" id="" cols="30" rows="5">
-Message
-            </textarea
-              >
-              <!-- <div class="list-areas">
-                <div>
-                  <input type="checkbox" id="check1" name="practice1" checked />
-                  <label for="scales">Practice1</label>
-                </div>
-
-                <div>
-                  <input type="checkbox" id="check2" name="practice2" />
-                  <label for="horns">Practice2</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="check2" name="practice3" />
-                  <label for="horns">Practice3</label>
-                </div>
-              </div> -->
-              <div class="submit-buttons">
-                <a class="btn btn-white" href="#">SEND MESSAGE</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <section class="footer-wrapper">
-          <div class="footer-link-container">
-            <div class="upper">
-              <div class="map">
-                <a href="">
-                  <img src="../assets/Image/map.jpg" alt="" />
-                </a>
-              </div>
-              <div class="desti">
-                <h3 class="desti-title">Quick links</h3>
-                <ul class="desti-list">
-                  <div class="links">
-                    <li class="footer-link"><a href="#">Home</a></li>
-                    <li class="footer-link"><a href="about">About Us</a></li>
-                    <li class="footer-link"><a href="practice">Practice </a></li>
-                    <li class="footer-link"><a href="publication">Publication</a></li>
-                    <li class="footer-link"><a href="publication">News</a></li>
-                    <li class="footer-link"><a href="contact">Contact Us</a></li>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">About us</h3>
-                <ul class="desti-list">
-                  <div>
-                    <p>
-                      Ea eiusmod sit enim pariatur adipisicing nisi elit tempor
-                      cupidatat deserunt et irure nulla. Aliqua labore cupidatat
-                      nulla magna exercitation anim tempor consequat officia
-                      mollit minim deserunt.
-                    </p>
-                  </div>
-                </ul>
-              </div>
-
-              <div class="desti">
-                <h3 class="desti-title">Contact Us</h3>
-                <ul class="desti-list">
-                  <div>
-                    <p>
-                      Ea eiusmod sit enim pariatur adipisicing nisi elit tempor
-                      cupidatat deserunt et irure nulla. Aliqua labore cupidatat
-                      nulla magna exercitation anim tempor consequat officia
-                      mollit minim deserunt.
-                    </p>
-                     <div class="icon-container">
-                     <a href="#"><img src="../assets/Icons/phone.svg" alt="" /></a> 
-                      <a href="#"><img src="../assets/Icons/facebook.svg" alt="" /></a>
-                     <a href="#"><img src="../assets/Icons/linkedin.svg" alt="" /></a> 
-              <a href="#"><img src="../assets/Icons/mail.svg" alt="" /></a>
-                    </div>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <hr />
-        <div class="lower">
-          <img src="../assets/Icons/Logo.svg" alt="" />
-          <p>EXPERTISE. EXPERIENCE. EXCELLENCE.</p>
-        </div>
-        <div class="copyright">
-          <p>
-            All Rights Reserved.&copy; 2022 Web Design & Development by
-            <a href="https://versavvymedia.com/">Versavvy Media PLC</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+   <section class="space"></section>
+    <ContactApp />
+   <section class="space"></section>
+    <FooterApp />
   </div>
 </template>
 
@@ -550,6 +365,9 @@ s0.parentNode.insertBefore(s1,s0);
         }
       }
     }
+  }
+  .space{
+    margin-top: 8rem;
   }
   @include responsive($md) {
     .learn-more {

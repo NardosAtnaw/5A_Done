@@ -17,7 +17,7 @@
                     <li class="footer-link"><a href="about">About Us</a></li>
                     <li class="footer-link"><a href="practice">Practice </a></li>
                     <li class="footer-link"><a href="team">Team</a></li>
-                    <li class="footer-link"><a href="publication">Insight</a></li>
+                    <li class="footer-link"><a href="insight">Insight</a></li>
                     <li class="footer-link"><a href="contact">Contact Us</a></li>
                   </div>
                 </ul>

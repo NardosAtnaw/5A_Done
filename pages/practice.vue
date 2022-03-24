@@ -1010,8 +1010,8 @@ export default {
               font-weight: 400;
             }
             .button {
-              display: grid;
-              place-content: left;
+              // display: grid;
+              // place-content: left;
               margin-top: 1.88rem;
               a {
                 @extend .text;

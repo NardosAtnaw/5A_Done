@@ -17,7 +17,7 @@
         </div>
       </div>
     </header>
-    <section class="links">
+    <!-- <section class="links">
       <div class="container">
         <div class="link">
           <ul class="public-link">
@@ -31,7 +31,7 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="publication-post">
       <div class="container">
         <div class="search">
@@ -107,8 +107,10 @@
           >
             <div class="img-wrapper">
               <div class="lists">
-                <img class="pub-img" src="../assets/Image/pub.svg" alt="" />
-                <div class="pub-title">{{ row.post_title }}</div>
+                <img class="pub-img" :src="
+                      'https://5alawoffice.com/5Adb/post_img/' + row.post_image
+                    " alt="" />
+              
               </div>
             </div>
             <div class="publication-desc">
@@ -124,7 +126,7 @@
         </div>
       </div>
     </section>
-    <section class="other-publication">
+    <!-- <section class="other-publication">
       <div class="container">
         <h2>Other Publications</h2>
         <div class="wrapper">
@@ -213,7 +215,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <ContactApp />
    <section class="space"></section>
     <FooterApp /> 
@@ -264,7 +266,7 @@ s0.parentNode.insertBefore(s1,s0);
   methods: {
     async search(){
       try {
-        await axios.post("https://5alawoffice.com/5Aback/", {
+        await axios.post("/api/", {
           action: "search",
           term: this.searchTerm
         }, config).then(res => {
@@ -281,9 +283,9 @@ s0.parentNode.insertBefore(s1,s0);
       try {
         await axios
           .post(
-            "https://5alawoffice.com/5Aback/",
+            "/api/",
             {
-              action: "fetchAll",
+              action: "publication",
             },
             config
           )
@@ -489,39 +491,61 @@ s0.parentNode.insertBefore(s1,s0);
         }
       }
       .search {
-        // display: grid;
-        // place-items: center;
+        display: grid;
+        place-items: center;
 
         margin-top: 5rem;
-        .input-container {
-          display: flex;
+         .input-container {
+                display: flex;
+                flex-direction: row-reverse;
+                width: 13rem;
+                height: 0.4rem;
+                margin-bottom: 3rem;
+                margin-right: -3rem;
+                margin-left: -1rem;
+                .search-button {
+                  background: none;
+                  border: none;
+                  padding: 0;
+                  margin: 0;
+                }
+                .icon {
+                  height: 2.11rem;
+                  padding: 5px;
 
-          flex-direction: row-reverse;
-          width: 15.38rem;
-          margin-bottom: 2.13rem;
-
-          .search-button {
-            background: none;
-            border: none;
-            padding: 0;
-            margin: 0;
-          }
-          .icon {
-            padding: 10px;
-            min-width: 50px;
-            // background: #fff;
-            border: 2px solid $A-darkerblue;
-            border-left: none;
-          }
-          .input-field {
-            width: 100%;
-            padding: 10px;
-            outline: none;
-            background: none;
-            border-color: #10284a;
-            border-right: none;
-          }
-        }
+                  min-width: 50px;
+                  // background: #fff;
+                  border: 2px solid $A-darkerblue;
+                  border-start-end-radius: 20px;
+                  border-end-end-radius: 20px;
+                  border-left: none;
+                }
+                ::placeholder {
+                  color: $A-darkerblue;
+                  opacity: 1; /* Firefox */
+                }
+                :-ms-input-placeholder {
+                  /* Internet Explorer 10-11 */
+                  color: #fff;
+                }
+                ::-ms-input-placeholder {
+                  /* Microsoft Edge */
+                  color: #fff;
+                }
+                .input-field {
+                  width: 100%;
+                  padding: 15px;
+                  color: $A-darkerblue;
+                  font-size: 1rem;
+                  outline: none;
+                  background: none;
+                  border-style: solid;
+                  border-color: $A-darkerblue;
+                  border-start-start-radius: 20px;
+                  border-end-start-radius: 20px;
+                  border-right: none;
+                }
+              }
         .search-object {
           margin-top: 0rem;
           margin-bottom: 5rem;
@@ -605,7 +629,7 @@ s0.parentNode.insertBefore(s1,s0);
   }
   @include responsive($lg) {
     .publication-post {
-      margin-top: 10rem;
+      margin-top: 8rem;
       .container {
         gap: 3rem;
         .publcation-wrapper {
@@ -625,7 +649,7 @@ s0.parentNode.insertBefore(s1,s0);
   }
   @include responsive($xl) {
     .publication-post {
-      margin-top: 10rem;
+      
       .container {
         .publcation-wrapper {
           padding-left: 5rem;

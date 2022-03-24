@@ -1,7 +1,7 @@
 <template>
   <div class="body-main">
     <header id="app" class="header">
-        <NavApp />
+      <NavApp />
       <div class="mid-title">
         <div
           class="wrapper"
@@ -17,26 +17,31 @@
         </div>
       </div>
     </header>
-    <section class="links">
+    <!-- <section class="links">
       <div class="container">
         <div class="link">
           <ul class="public-link">
             <li>
               <a href="#"> Laws</a>
             </li>
-            <!-- <li><a href="#">Journal</a></li> -->
-            <li><a href="#"> Article</a></li>
+           
+            <li><a href="#"> Journal</a></li>
             <li><a href="#"> Research</a></li>
             <li><a href="#"> Proclamations</a></li>
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="publication-post">
       <div class="container">
         <div class="search">
           <div class="input-container">
-            <button @click="search" type="submit" name="submit" class="search-button">
+            <button
+              @click="search"
+              type="submit"
+              name="submit"
+              class="search-button"
+            >
               <img src="../assets/Icons/search.svg" class="icon" alt="" />
             </button>
             <input
@@ -53,7 +58,7 @@
                 <a href="coporate"> Coporate and Commercial</a>
               </li>
               <li><a href="power">Power and Energy</a></li>
-              <li><a href="mining">Miming</a></li>
+              <li><a href="mining">Mining</a></li>
               <li><a href="telecom">ICT & Telecom</a></li>
 
               <li><a href="employee">Employement and Immigration</a></li>
@@ -90,73 +95,52 @@
             </div>
           </div>
         </div>
-        <div
-          class="publcation-wrapper"
-          v-for="row in allData"
-          :key="row.post_id"
-        >
+        <div class="all">
           <div
-            class="single-publication"
-            data-aos="slide-up"
-            data-aos-offset="20"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
+            class="publcation-wrapper"
+            v-for="row in allData"
+            :key="row.post_id"
           >
-            <div class="img-wrapper">
-              <div class="lists">
-                <img class="pub-img" src="../assets/Image/pub.svg" alt="" />
-                <div class="pub-title">{{ row.post_title }}</div>
+            <div
+              class="single-publication"
+              data-aos="slide-up"
+              data-aos-offset="20"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            >
+              <div class="img-wrapper">
+                <div class="lists">
+                  <img
+                    class="pub-img"
+                    :src="
+                      'https://5alawoffice.com/5Adb/post_img/' + row.post_image
+                    "
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="publication-desc">
+                <h4>{{ row.post_title }}</h4>
+                <p>
+                  {{ row.post_content }}
+                </p>
               </div>
             </div>
-            <div class="publication-desc">
-              <h4>{{ row.post_title }}</h4>
-              <p>
-                {{ row.post_content }}
-              </p>
-            </div>
-          </div>
-          <div class="arrow">
-         
+            <div class="arrow"></div>
           </div>
         </div>
       </div>
     </section>
-    <section class="other-publication">
+    <!-- <section class="other-publication">
       <div class="container">
         <h2>Other Publications</h2>
         <div class="wrapper">
-          <div
-            data-tilt
-            class="lists"
-            data-aos="zoom-out-up"
-            data-aos-offset="20"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
-          >
-            <img class="pub-img" src="../assets/Image/pub2.svg" alt="" />
-            <div class="pub-title">Womens Right in Ethiopia</div>
-          </div>
-          <div
-            data-tilt
-            class="lists"
-            data-aos="zoom-out-up"
-            data-aos-offset="20"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center"
-          >
-            <img class="pub-img" src="../assets/Image/pub3.svg" alt="" />
-            <div class="pub-title">Crimal law in Ethiopia</div>
-          </div>
-          <div
+         
+      <a href="blog">
+ <div
             data-tilt
             class="lists"
             data-aos="zoom-out-up"
@@ -170,7 +154,9 @@
             <img class="pub-img" src="../assets/Image/pub4.svg" alt="" />
             <div class="pub-title">Contract of Mandate</div>
           </div>
-          <div
+      </a>
+         <a href="journal">
+       <div
             data-tilt
             class="lists"
             data-aos="zoom-out-up"
@@ -184,6 +170,8 @@
             <img class="pub-img" src="../assets/Image/pub2.svg" alt="" />
             <div class="pub-title">Childrens Law in Ethiopia</div>
           </div>
+         </a>
+   
           <div
             data-tilt
             class="lists"
@@ -213,12 +201,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <ContactApp />
-   <section class="space"></section>
-    <FooterApp /> 
-
-    
+    <section class="space"></section>
+    <FooterApp />
   </div>
 </template>
 
@@ -228,17 +214,17 @@ import "aos/dist/aos.css";
 import axios from "axios";
 
 const config = {
-        headers: {
-          Accept: "application/json",
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "GET,POST,OPTIONS,DELETE,PUT",
-        },
-      };
+  headers: {
+    Accept: "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS,DELETE,PUT",
+  },
+};
 export default {
   data() {
     return {
       allData: [],
-      searchTerm: ''
+      searchTerm: "",
     };
   },
   mounted() {
@@ -249,41 +235,45 @@ export default {
       once: false,
       anchorPlacement: "top-bottom",
     });
-       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/62220908a34c245641296e76/1ftaf6j28';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-
-  
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/62220908a34c245641296e76/1ftaf6j28";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
   },
   methods: {
-    async search(){
+    async search() {
       try {
-        await axios.post("https://5alawoffice.com/5Aback/", {
-          action: "search",
-          term: this.searchTerm
-        }, config).then(res => {
-          console.log(res.data);
-          this.allData = res.data
-        })
+        await axios
+          .post(
+            "/api/",
+            {
+              action: "search",
+              term: this.searchTerm,
+            },
+            config
+          )
+          .then((res) => {
+            console.log(res.data);
+            this.allData = res.data;
+          });
       } catch (err) {
         console.log(err.message);
       }
     },
     async fetchData() {
-      
-
       try {
         await axios
           .post(
-            "https://5alawoffice.com/5Aback/",
+            "/api/",
             {
-              action: "fetchAll",
+              action: "blog",
             },
             config
           )
@@ -326,7 +316,6 @@ s0.parentNode.insertBefore(s1,s0);
     height: 70vh;
     width: 100%;
 
-   
     .mid-title {
       display: grid;
       place-content: center;
@@ -344,7 +333,6 @@ s0.parentNode.insertBefore(s1,s0);
   }
   @include responsive($md) {
     header {
-    
       .mid-title {
         .wrapper {
           margin-top: 15rem;
@@ -357,7 +345,6 @@ s0.parentNode.insertBefore(s1,s0);
   }
   @include responsive($lg) {
     header {
-    
       .mid-title {
         .wrapper {
           margin-top: 20rem;
@@ -367,7 +354,6 @@ s0.parentNode.insertBefore(s1,s0);
   }
   @include responsive($xl) {
     header {
-      
       .mid-title {
         .wrapper {
           margin-top: 15rem;
@@ -436,70 +422,75 @@ s0.parentNode.insertBefore(s1,s0);
   .publication-post {
     margin-top: 5rem;
     .container {
-      .publcation-wrapper {
-        background: #ecf2fd;
-        padding: 1rem;
-        position: relative;
-        .single-publication {
-          .img-wrapper {
-            .lists {
-              display: grid;
-              place-items: center;
-              position: relative;
+      .all {
+        .publcation-wrapper {
+          background: #ecf2fd;
+          padding: 1rem;
+          position: relative;
+          .single-publication {
+            .img-wrapper {
+              .lists {
+                display: grid;
+                place-items: center;
+                position: relative;
+                margin-top: 2rem;
+
+                .pub-img {
+                  width: 20rem;
+                  object-fit: cover;
+                  // position: relative;
+                }
+                .pub-title {
+                  position: absolute;
+                  // top: 0;
+                  margin-left: 2rem;
+                  margin-right: 2rem;
+                  @extend .title;
+
+                  text-align: center;
+                  color: #fff;
+                }
+              }
+            }
+            .publication-desc {
               margin-top: 2rem;
-
-              .pub-img {
-                // position: relative;
-              }
-              .pub-title {
-                position: absolute;
-                // top: 0;
-                margin-left: 2rem;
-                margin-right: 2rem;
+              h4 {
                 @extend .title;
-
+                font-weight: 500;
+                color: $A-darkerblue;
                 text-align: center;
-                color: #fff;
+                line-height: 2rem;
+              }
+              p {
+                @extend .text;
+                margin-top: 0.94rem;
+                color: $A-darkerblue;
               }
             }
           }
-          .publication-desc {
-            margin-top: 2rem;
-            h4 {
-              @extend .title;
-              font-weight: 500;
-              color: $A-darkerblue;
-              text-align: center;
-              line-height: 2rem;
+          .arrow {
+            display: flex;
+            justify-content: right;
+            margin-top: 5rem;
+            img {
+              width: 3rem;
             }
-            p {
-              @extend .text;
-              margin-top: 0.94rem;
-              color: $A-darkerblue;
-            }
-          }
-        }
-        .arrow {
-          display: flex;
-          justify-content: right;
-          margin-top: 5rem;
-          img {
-            width: 3rem;
           }
         }
       }
       .search {
-        // display: grid;
-        // place-items: center;
+        display: grid;
+        place-items: center;
 
         margin-top: 5rem;
         .input-container {
           display: flex;
-
           flex-direction: row-reverse;
-          width: 15.38rem;
-          margin-bottom: 2.13rem;
-
+          width: 13rem;
+          height: 0.4rem;
+          margin-bottom: 3rem;
+          margin-right: -3rem;
+          margin-left: -1rem;
           .search-button {
             background: none;
             border: none;
@@ -507,18 +498,39 @@ s0.parentNode.insertBefore(s1,s0);
             margin: 0;
           }
           .icon {
-            padding: 10px;
+            height: 2.11rem;
+            padding: 5px;
+
             min-width: 50px;
             // background: #fff;
             border: 2px solid $A-darkerblue;
+            border-start-end-radius: 20px;
+            border-end-end-radius: 20px;
             border-left: none;
+          }
+          ::placeholder {
+            color: $A-darkerblue;
+            opacity: 1; /* Firefox */
+          }
+          :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #fff;
+          }
+          ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #fff;
           }
           .input-field {
             width: 100%;
-            padding: 10px;
+            padding: 15px;
+            color: $A-darkerblue;
+            font-size: 1rem;
             outline: none;
             background: none;
-            border-color: #10284a;
+            border-style: solid;
+            border-color: $A-darkerblue;
+            border-start-start-radius: 20px;
+            border-end-start-radius: 20px;
             border-right: none;
           }
         }
@@ -567,13 +579,15 @@ s0.parentNode.insertBefore(s1,s0);
         display: flex;
         flex-direction: row-reverse;
         gap: 1rem;
-        .publcation-wrapper {
-          padding: 1rem;
-          .single-publication {
-            .publication-desc {
-              margin-top: 4rem;
-              p {
-                margin-top: 2rem;
+        .all {
+          .publcation-wrapper {
+            padding: 1rem;
+            .single-publication {
+              .publication-desc {
+                margin-top: 4rem;
+                p {
+                  margin-top: 2rem;
+                }
               }
             }
           }
@@ -605,17 +619,19 @@ s0.parentNode.insertBefore(s1,s0);
   }
   @include responsive($lg) {
     .publication-post {
-      margin-top: 10rem;
+      margin-top: 8rem;
       .container {
         gap: 3rem;
-        .publcation-wrapper {
-          padding-left: 5rem;
-          padding-right: 5rem;
-          .single-publication {
-            .publication-desc {
-              margin-top: 4rem;
-              p {
-                margin-top: 2rem;
+        .all {
+          .publcation-wrapper {
+            padding-left: 5rem;
+            padding-right: 5rem;
+            .single-publication {
+              .publication-desc {
+                margin-top: 4rem;
+                p {
+                  margin-top: 2rem;
+                }
               }
             }
           }
@@ -625,18 +641,19 @@ s0.parentNode.insertBefore(s1,s0);
   }
   @include responsive($xl) {
     .publication-post {
-      margin-top: 10rem;
       .container {
-        .publcation-wrapper {
-          padding-left: 5rem;
-          padding-right: 5rem;
-          padding-top: 5rem;
-          padding-bottom: 5rem;
-          .single-publication {
-            .publication-desc {
-              margin-top: 4rem;
-              p {
-                margin-top: 2rem;
+        .all {
+          .publcation-wrapper {
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            .single-publication {
+              .publication-desc {
+                margin-top: 4rem;
+                p {
+                  margin-top: 2rem;
+                }
               }
             }
           }
@@ -664,9 +681,6 @@ s0.parentNode.insertBefore(s1,s0);
           position: relative;
           margin-top: 2rem;
 
-          .pub-img {
-            // position: relative;
-          }
           .pub-title {
             position: absolute;
             // top: 0;
@@ -690,6 +704,9 @@ s0.parentNode.insertBefore(s1,s0);
           gap: 1rem;
           margin-top: 3rem;
           .lists {
+            .pub-img {
+              width: 30rem;
+            }
             .pub-title {
               font-size: 1.3rem;
             }
@@ -1178,7 +1195,7 @@ s0.parentNode.insertBefore(s1,s0);
                     margin-top: 0.98rem;
                     .footer-link {
                       a {
-                        font-size: .8rem;
+                        font-size: 0.8rem;
                         text-align: left;
                       }
                     }
