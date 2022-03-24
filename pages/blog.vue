@@ -252,7 +252,7 @@ export default {
       try {
         await axios
           .post(
-            "/api/",
+            "/5Adb/",
             {
               action: "search",
               term: this.searchTerm,
@@ -271,7 +271,7 @@ export default {
       try {
         await axios
           .post(
-            "/api/",
+            "/5Adb/",
             {
               action: "blog",
             },

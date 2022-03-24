@@ -266,7 +266,7 @@ s0.parentNode.insertBefore(s1,s0);
   methods: {
     async search(){
       try {
-        await axios.post("/api/", {
+        await axios.post("/5Adb/", {
           action: "search",
           term: this.searchTerm
         }, config).then(res => {
@@ -283,7 +283,7 @@ s0.parentNode.insertBefore(s1,s0);
       try {
         await axios
           .post(
-            "/api/",
+            "/5Adb/",
             {
               action: "publication",
             },
