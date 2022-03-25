@@ -615,7 +615,6 @@
 <script>
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 export default {
   data() {
     return {
@@ -623,7 +622,6 @@ export default {
       searchTerm: "",
     };
   },
-
   mounted() {
     AOS.init({
       duration: 900,
@@ -632,8 +630,7 @@ export default {
       once: false,
       anchorPlacement: "top-bottom",
     });
-    var Tawk_API = Tawk_API || {},
-      Tawk_LoadStart = new Date();
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function () {
       var s1 = document.createElement("script"),
         s0 = document.getElementsByTagName("script")[0];
@@ -648,59 +645,8 @@ export default {
     // '',''
     // );
 
-    const menu = document.querySelector(".menu");
-    const sidebar = document.querySelector(".links-container");
-    const close = document.querySelector(".close-btn");
-    const banner = document.querySelector(".banner");
-    menu.addEventListener("click", () => {
-      sidebar.style.right = "0";
-    });
-    close.addEventListener("click", () => {
-      sidebar.style.right = "-70vw";
-    });
-    const scrollLink = document.querySelectorAll(".scroll-link");
-    window.addEventListener("load", () => {
-      scrollLink.forEach((link) => {
-        if (link.href === path) {
-          link.style.color = "#71deb5";
-          link.style.fontWeight = "bold";
-        }
-      });
-    });
 
-    window.addEventListener("scroll", () => {
-      const nav = document.querySelector(".nav");
-      const menu = document.querySelector(".menu");
-      const logo = document.querySelector(".logo a");
-      const navHeight = nav.getBoundingClientRect().height;
-      const scrollHeight = window.pageYOffset;
-
-      if (navHeight < scrollHeight) {
-        nav.classList.add("fixed");
-        logo.innerHTML = `<picture>
-    <source media="(min-width:650px)" srcset=" ">
-    <img src="../assets/Icons/Logo.svg " class=" " alt=" " />
-  </picture>`;
-
-        if (window.innerWidth > 768) {
-          scrollLink.forEach((link) => {
-            link.classList.add("black");
-            if (link.href === path) {
-              link.classList.remove("black");
-              link.style.color = "#71deb5";
-            }
-          });
-        }
-      } else {
-        nav.classList.remove("fixed");
-
-        if (window.innerWidth > 768) {
-          scrollLink.forEach((link) => {
-            link.classList.remove("black");
-          });
-        }
-      }
-    });
+   
   },
   methods: {
     async search() {
