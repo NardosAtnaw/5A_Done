@@ -450,9 +450,9 @@ s0.parentNode.insertBefore(s1,s0);
               position: relative;
               margin-top: 2rem;
 
-              .pub-img {
-                // position: relative;
-              }
+              // .pub-img {
+              //   position: relative;
+              // }
               .pub-title {
                 position: absolute;
                 // top: 0;
@@ -665,10 +665,10 @@ s0.parentNode.insertBefore(s1,s0);
             }
           }
         }
-        .search {
-          .search-object {
-          }
-        }
+        // .search {
+        //   .search-object {
+        //   }
+        // }
       }
     }
   }
@@ -688,9 +688,9 @@ s0.parentNode.insertBefore(s1,s0);
           position: relative;
           margin-top: 2rem;
 
-          .pub-img {
-            // position: relative;
-          }
+          // .pub-img {
+          //   position: relative;
+          // }
           .pub-title {
             position: absolute;
             // top: 0;
