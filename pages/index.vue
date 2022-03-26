@@ -23,7 +23,7 @@
         <div class="hover"></div>
       </div>
     </section>
-      <Search  class="border-soild border-2 border-gray-500" width="300px" height="500px"/>
+     
     <section class="awards">
       <div class="container">
         <div

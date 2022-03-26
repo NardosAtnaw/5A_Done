@@ -294,7 +294,7 @@ export default {
       try {
         await axios
           .post(
-            "https://5alawoffice.com/5Aback/",
+            "/5Adb/",
             {
               action: "search",
               term: this.searchTerm,
@@ -313,7 +313,7 @@ export default {
       try {
         await axios
           .post(
-            "https://5alawoffice.com/5Aback/",
+            "/5Adb/",
             {
               action: "fetchAll",
             },
