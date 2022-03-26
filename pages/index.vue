@@ -1,7 +1,6 @@
 <template>
   <div class="body-main">
     <HeaderApp />
-  
     <section class="description">
       <div class="container">
         <div class="desc">
@@ -23,7 +22,6 @@
         <div class="hover"></div>
       </div>
     </section>
-     
     <section class="awards">
       <div class="container">
         <div
@@ -38,6 +36,7 @@
         >
           <img src="../assets/Image/A2.svg" alt="" />
           <img src="../assets/Image/A1.svg" alt="" />
+
           <img src="../assets/Image/award.svg" alt="" />
           <!-- <img src="../assets/Image/award2.svg" alt="" /> -->
           <img src="../assets/Image/award2.svg" alt="" />
@@ -512,8 +511,6 @@
           please follow this link.
         </p>
         <div class="wrapper">
-          <a href="blog">
-
           <div
             class="blog-post"
             data-aos="slide-up"
@@ -542,9 +539,6 @@
               <img src="../assets/Icons/poll.svg" alt="" />
             </div>
           </div>
-          </a>
-          <a href="news">
-
           <div
             class="news"
             data-aos="slide-up"
@@ -561,7 +555,7 @@
                 media regulation that were governed by two different
                 legislations. Previously, access to information and the print
                 media was regulated under Proclamation 590//2008, while the
-                broadcast media was regulated under Proclamation 533/2007.
+                broadcast media was regulated under Proclamation 533/2007. 
               </p>
               <div class="link">
                 <a href="#">
@@ -571,9 +565,6 @@
               </div>
             </div>
           </div>
-          </a>
-          <a href="journal">
-
           <div
             class="blog-post"
             data-aos="slide-up"
@@ -588,11 +579,7 @@
               Proclamation in Art 84 provides that defamation shall only entail
               civil liability and shall not entail criminal responsibility. This
               will have far reaching significance for the progress of media
-              will have far reaching significance for the progress of media
-              freedom in the country. civil liability and shall not entail criminal responsibility. This
-              will have far reaching significance for the progress of media
-              will have far reaching significance for the progress of media
-              freedom in the country.
+              freedom in the country. 
             </p>
             <div class="link">
               <a href="#">
@@ -604,7 +591,6 @@
               <img src="../assets/Icons/poll.svg" alt="" />
             </div>
           </div>
-          </a>
         </div>
       </div>
     </section>
@@ -630,7 +616,8 @@ export default {
       once: false,
       anchorPlacement: "top-bottom",
     });
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
     (function () {
       var s1 = document.createElement("script"),
         s0 = document.getElementsByTagName("script")[0];
@@ -641,12 +628,59 @@ export default {
       s0.parentNode.insertBefore(s1, s0);
     })();
 
-    // const searchClient =algoliasearch(
-    // '',''
-    // );
+    const menu = document.querySelector(".menu");
+    const sidebar = document.querySelector(".links-container");
+    const close = document.querySelector(".close-btn");
+    const banner = document.querySelector(".banner");
+    menu.addEventListener("click", () => {
+      sidebar.style.right = "0";
+    });
+    close.addEventListener("click", () => {
+      sidebar.style.right = "-70vw";
+    });
+    const scrollLink = document.querySelectorAll(".scroll-link");
+    window.addEventListener("load", () => {
+      scrollLink.forEach((link) => {
+        if (link.href === path) {
+          link.style.color = "#71deb5";
+          link.style.fontWeight = "bold";
+        }
+      });
+    });
 
+    window.addEventListener("scroll", () => {
+      const nav = document.querySelector(".nav");
+      const menu = document.querySelector(".menu");
+      const logo = document.querySelector(".logo a");
+      const navHeight = nav.getBoundingClientRect().height;
+      const scrollHeight = window.pageYOffset;
 
-   
+      if (navHeight < scrollHeight) {
+        nav.classList.add("fixed");
+        logo.innerHTML = `<picture>
+    <source media="(min-width:650px)" srcset=" ">
+    <img src="../assets/Icons/Logo.svg " class=" " alt=" " />
+  </picture>`;
+
+        if (window.innerWidth > 768) {
+          scrollLink.forEach((link) => {
+            link.classList.add("black");
+            if (link.href === path) {
+              link.classList.remove("black");
+              link.style.color = "#71deb5";
+            }
+          });
+        }
+      } else {
+        nav.classList.remove("fixed");
+
+        if (window.innerWidth > 768) {
+          scrollLink.forEach((link) => {
+            link.classList.remove("black");
+          });
+        }
+      }
+    });
   },
   methods: {
     async search() {
@@ -692,7 +726,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .body-main {
- 
   .show-links,
   .show-links2 {
     display: flex !important;
@@ -2080,6 +2113,8 @@ export default {
     margin-top: 8rem;
     margin-bottom: 8rem;
     .container {
+      display: grid;
+      place-items: center;
       h2 {
         @extend .title;
         text-align: center;
@@ -2137,9 +2172,9 @@ export default {
       }
       .blog-post {
         margin-top: 4rem;
-        width: 21rem;
         background: $A-lightblue;
         padding: 2rem;
+         width: 21rem;
         h2 {
           @extend .title;
 
@@ -2181,25 +2216,12 @@ export default {
       }
     }
   }
-
-   @include responsive($md) {
-    .blog {
-      .container {
-        .wrapper {
-          gap: 1rem;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-    }
-  }
   @include responsive($lg) {
     .blog {
       .container {
         .wrapper {
-          gap: .5rem;
-             display: grid;
-          grid-template-columns: 1fr 1fr ;
+          gap: 1rem;
+          display: flex;
         }
       }
     }
@@ -2208,14 +2230,6 @@ export default {
     .blog {
       margin-top: 10rem;
       .container {
-        .wrapper {
-         
-             display: grid;
-          grid-template-columns: 1fr 1fr 1fr  ;
-          .blog-post, .news{
-            width: 25rem;
-          }
-        }
         .sub-title {
           margin-top: 1.5rem;
           font-size: 1rem;
@@ -2223,6 +2237,7 @@ export default {
           margin-right: 25rem;
         }
         .blog-post {
+          width: 25rem;
           p {
             margin-top: 4rem;
             font-size: 1.13rem;

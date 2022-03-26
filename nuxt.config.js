@@ -23,12 +23,10 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/scss/style.scss',
-    '@/assets/css/tailwind.css'
   ],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  // Plugins to run before renderig page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/vue-instantsearch.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -73,6 +71,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile:['vue-instantsearch', 'instantsearch.js/es']
   }
 }
