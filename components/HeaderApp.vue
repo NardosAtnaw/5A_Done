@@ -14,22 +14,22 @@
         <div class="links-container">
           <img src="../assets/Icons/close.svg" class="close-btn" alt="" />
           <div class="upper-nav">
-            <p>Contact@5alawoffice.com | +25116504949</p>
+            <p>5Aadmin@5alawoffice.com | +25116504949</p>
             <ul>
               <li>
-                <a href=""><img src="../assets/Icons/mail.svg" alt="" /> </a>
+                <a href="mailto:5Aadmin@5alawoffice.com"><img src="../assets/Icons/mail.svg" alt="" /> </a>
               </li>
               <li>
-                <a href=""><img src="../assets/Icons/twitter.svg" alt="" /> </a>
+                <a href="https://twitter.com/5aJurist"><img src="../assets/Icons/twitter.svg" alt="" /> </a>
               </li>
               <li>
                 <a href=""
                   ><img src="../assets/Icons/facebook.svg" alt="" />
                 </a>
               </li>
-              <!-- <li>
-                <a href=""><img src="../assets/Icons/google.svg" alt="" /> </a>
-              </li> -->
+              <li>
+                <a href="https://t.me/FiveAJuristConsultancyGroup"><img src="../assets/Icons/telegram.svg" alt="" /> </a>
+              </li>
               <li>
                 <a href="https://www.linkedin.com/company/5a-jurist-consultancy-group/about/?viewAsMember=true"
                   ><img src="../assets/Icons/linkedin.svg" alt="" />

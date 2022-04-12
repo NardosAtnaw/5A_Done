@@ -347,7 +347,7 @@
               </p>
             </div>
           </div>
-   <div
+   <!-- <div
             class="card"
             @click="togglePopup('aynalem')"
             data-aos="zoom-out-up"
@@ -458,7 +458,7 @@
              Berihun Adugna Mihretu has earned his Bachelor of Laws (LL. B) from Mekele University Faculty of Law, in 2007 ...
               </p>
             </div>
-          </div>
+          </div> -->
          
         </div>
       </div>

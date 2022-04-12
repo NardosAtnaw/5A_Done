@@ -21,15 +21,15 @@
             <img src="../assets/Icons/decor.svg" alt="" />
             <ul>
               <li>
-                <a href=""
+                <a href="mailto:5Aadmin@5alawoffice.com"
                   ><img src="../assets/Icons/mail.svg" alt="" />
-                  <p>Contact@5alawoffice.com</p></a
+                  <p>5Aadmin@5alawoffice.com</p></a
                 >
               </li>
               <li>
-                <a href=""
+                <a href="https://www.linkedin.com/company/5a-jurist-consultancy-group/about/?viewAsMember=true"
                   ><img src="../assets/Icons/linkedin.svg" alt="" />
-                  <p>5Alawoffice@linkedin.com</p></a
+                  <p>5a-jurist-consultancy-group</p></a
                 >
               </li>
               <li>
