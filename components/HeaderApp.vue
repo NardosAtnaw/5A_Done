@@ -14,13 +14,17 @@
         <div class="links-container">
           <img src="../assets/Icons/close.svg" class="close-btn" alt="" />
           <div class="upper-nav">
-            <p>5Aadmin@5alawoffice.com | +25116504949</p>
+            <p>mesenbet.assefa@aau.edu.et | +25116504949</p>
             <ul>
               <li>
-                <a href="mailto:5Aadmin@5alawoffice.com"><img src="../assets/Icons/mail.svg" alt="" /> </a>
+                <a href="mailto:mesenbet.assefa@aau.edu.et"
+                  ><img src="../assets/Icons/mail.svg" alt="" />
+                </a>
               </li>
               <li>
-                <a href="https://twitter.com/5aJurist"><img src="../assets/Icons/twitter.svg" alt="" /> </a>
+                <a href="https://twitter.com/5aJurist"
+                  ><img src="../assets/Icons/twitter.svg" alt="" />
+                </a>
               </li>
               <li>
                 <a href=""
@@ -28,10 +32,13 @@
                 </a>
               </li>
               <li>
-                <a href="https://t.me/FiveAJuristConsultancyGroup"><img src="../assets/Icons/telegram.svg" alt="" /> </a>
+                <a href="https://t.me/FiveAJuristConsultancyGroup"
+                  ><img src="../assets/Icons/telegram.svg" alt="" />
+                </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/5a-jurist-consultancy-group/about/?viewAsMember=true"
+                <a
+                  href="https://www.linkedin.com/company/5a-jurist-consultancy-group/about/?viewAsMember=true"
                   ><img src="../assets/Icons/linkedin.svg" alt="" />
                 </a>
               </li>
@@ -51,27 +58,30 @@
                 <div class="corp-link">
                   <li>
                     <a href="coporate"> Sector</a>
-                 <ul class="double-link">
+                    <ul class="double-link">
                       <div class="links">
-                          <li>
+                        <li>
                           <a href="indu"
                             >Industrials, Manufacturing & Transportation</a
                           >
                         </li>
-                        
-                        <li><a href="energy">Energy, Mining & Infrastructure</a></li>
-                       
+
+                        <li>
+                          <a href="energy">Energy, Mining & Infrastructure</a>
+                        </li>
+
                         <li><a href="health">Healthcare & Life Sciences</a></li>
                         <li><a href="hotel">Hotels, Resorts & Tourism</a></li>
-                      
-                         <li><a href="finance"> Financial Institutions</a></li>
-                         <li><a href="consumer">Consumer Goods & Retail</a></li>
+
+                        <li><a href="finance"> Financial Institutions</a></li>
+                        <li><a href="consumer">Consumer Goods & Retail</a></li>
                         <li><a href="private">Private Equity</a></li>
-                         <li>
-                          <a href="telecom">Technology, Media & Telecommunications</a>
+                        <li>
+                          <a href="telecom"
+                            >Technology, Media & Telecommunications</a
+                          >
                         </li>
                         <li><a href="real">Real Estate</a></li>
-                       
                       </div>
                     </ul>
                   </li>
@@ -116,9 +126,7 @@
                           <a href="employee">Employment & Immigration</a>
                         </li>
                         <li>
-                          <a href="construction"
-                            >Construction & Design</a
-                          >
+                          <a href="construction">Construction & Design</a>
                         </li>
                         <li>
                           <a href="antitrust">Antitrust & Competition</a>
@@ -157,7 +165,7 @@
 
             <li class="drop">
               <a href="team" class="scroll-link">Teams</a>
-                  <ul class="sublinks3">
+              <ul class="sublinks3">
                 <div class="corp-link">
                   <li><a href="partners">Partners</a></li>
                   <li><a href="partners">Leader</a></li>
@@ -473,12 +481,13 @@ export default {
               }
               .scroll-link {
                 @extend .text-medium;
-                font-size: 1.0rem;
+                font-size: 1rem;
                 font-weight: 600;
                 color: #fff;
               }
               .sublinks,
-              .sublinks2, .sublinks3 {
+              .sublinks2,
+              .sublinks3 {
                 margin: 1rem 0;
                 color: $A-green;
                 h3 {
@@ -506,7 +515,7 @@ export default {
                       width: 0.5rem;
                     }
                   }
-                  .double-link{
+                  .double-link {
                     display: none;
                   }
                 }
@@ -637,9 +646,9 @@ export default {
               ul {
                 display: flex;
                 gap: 1rem;
-                li{
-                  a{
-                    img{
+                li {
+                  a {
+                    img {
                       width: 1rem;
                     }
                   }
@@ -673,7 +682,8 @@ export default {
 
               .drop {
                 .sublinks,
-                .sublinks2, .sublinks3 {
+                .sublinks2,
+                .sublinks3 {
                   position: absolute;
                   width: auto;
                   background: rgba(104, 133, 77, 0.88);
@@ -751,7 +761,7 @@ export default {
                     left: 27rem;
                     position: absolute;
                   }
-                    .sublinks3 {
+                  .sublinks3 {
                     display: block;
                     margin-top: -1.8rem;
                     width: 200px;

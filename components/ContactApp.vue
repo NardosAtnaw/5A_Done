@@ -21,9 +21,9 @@
             <img src="../assets/Icons/decor.svg" alt="" />
             <ul>
               <li>
-                <a href="mailto:5Aadmin@5alawoffice.com"
+                <a href="mailto:mesenbet.assefa@aau.edu.et"
                   ><img src="../assets/Icons/mail.svg" alt="" />
-                  <p>5Aadmin@5alawoffice.com</p></a
+                  <p>mesenbet.assefa@aau.edu.et</p></a
                 >
               </li>
               <li>
@@ -54,7 +54,7 @@
             This is the contact form; Please make sure to fill it in order for
             you to reach us
           </p>
-          <form method="POST" action="https://formsubmit.co/5Aadmin@5alawoffice.com" enctype="multipart/form-data" class="myform">
+          <form method="POST" action="https://formsubmit.co/mesenbet.assefa@aau.edu.et" enctype="multipart/form-data" class="myform">
             <img
               class="contact-decor"
               src="../assets/Icons/decor2.svg"

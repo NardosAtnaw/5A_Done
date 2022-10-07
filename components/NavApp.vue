@@ -13,10 +13,10 @@
       <div class="links-container">
         <img src="../assets/Icons/close.svg" class="close-btn" alt="" />
         <div class="upper-nav">
-          <p>5Aadmin@5alawoffice.com | +25116504949</p>
+          <p>mesenbet.assefa@aau.edu.et | +25116504949</p>
           <ul>
             <li>
-              <a href="mailto:5Aadmin@5alawoffice.com"><img src="../assets/Icons/mail.svg" alt="" /> </a>
+              <a href="mailto:mesenbet.assefa@aau.edu.et"><img src="../assets/Icons/mail.svg" alt="" /> </a>
             </li>
             <li>
               <a href="https://twitter.com/5aJurist"><img src="../assets/Icons/twitter.svg" alt="" /> </a>
