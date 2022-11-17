@@ -2,9 +2,14 @@
   <header id="app" class="header">
     <nav class="nav" id="nav">
       <div class="container banner">
+        <nuxt-link to="/" >
+         
         <div class="logo">
-          <img src="../assets/Icons/Logo.svg" alt="" />
+<img src="../assets/Icons/Logo.svg" alt="" />
+
+        
         </div>
+      </nuxt-link>
         <div class="menu-bar menu">
           <hr />
           <hr />
@@ -26,11 +31,7 @@
                   ><img src="../assets/Icons/twitter.svg" alt="" />
                 </a>
               </li>
-              <li>
-                <a href=""
-                  ><img src="../assets/Icons/facebook.svg" alt="" />
-                </a>
-              </li>
+           
               <li>
                 <a href="https://t.me/FiveAJuristConsultancyGroup"
                   ><img src="../assets/Icons/telegram.svg" alt="" />
@@ -195,7 +196,7 @@
             <li><a href="contact" class="scroll-link">Contact Us</a></li>
             <li>
               <!-- <a href="publication"><img src="../assets/Icons/search1.svg" class="search" alt="" /></a>  -->
-              <div class="input-container">
+              <!-- <div class="input-container">
                 <button
                   @click="search"
                   type="submit"
@@ -211,7 +212,7 @@
                   placeholder="Search..."
                   name="search"
                 />
-              </div>
+              </div> -->
             </li>
           </ul>
         </div>
@@ -284,7 +285,9 @@ export default {
         nav.classList.add("fixed");
         logo.innerHTML = `<picture>
     <source media="(min-width:650px)" srcset=" ">
-    <img src="../assets/Icons/Logo.svg " class=" " alt=" " />
+   <img src="../assets/Icons/Logo.svg" alt="" />
+   
+
   </picture>`;
 
         if (window.innerWidth > 768) {
@@ -371,7 +374,7 @@ export default {
     background-size: cover;
     background-blend-mode: overlay;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 
     nav {
       .container {
@@ -558,7 +561,8 @@ export default {
         .container {
           .moto-wrapper {
             display: flex;
-            justify-content: center;
+           justify-content: left;
+         
             margin-top: 5rem;
             .rectangle {
               img {
@@ -778,6 +782,7 @@ export default {
         .container {
           .moto-wrapper {
             justify-content: left;
+            margin-left: -34rem;
             margin-top: 5rem;
             .rectangle {
               img {

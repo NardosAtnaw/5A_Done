@@ -32,12 +32,12 @@
                   <p>5a-jurist-consultancy-group</p></a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a href=""
                   ><img src="../assets/Icons/facebook.svg" alt="" />
                   <p>5Alawoffice@facebook.com</p></a
                 >
-              </li>
+              </li> -->
               <li>
                 <a href=""
                   ><img src="../assets/Icons/phone.svg" alt="" />
@@ -79,12 +79,12 @@
                 name="_subject"
                 placeholder="Subject"
               />
-              <input
+              <!-- <input
                 type="file"
                 id="avatar"
                 name="avatar"
                 accept="image/png, image/jpeg"
-              />
+              /> -->
               <input type="hidden" name="_template" value="basic">
               <!-- <div class="file-upload">
                 <input type="file" />

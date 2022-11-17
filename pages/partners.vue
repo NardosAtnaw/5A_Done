@@ -204,7 +204,29 @@
             </div>
           </div>
 
-        
+          <div
+            class="card"
+            @click="togglePopup('mesnbet')"
+            data-aos="zoom-out-up"
+            data-aos-offset="20"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            <div class="indiv-pic">
+              <img class="indiv-img" src="../assets/Image/mesnbet.jpg" alt="" />
+              <div class="bottom-decor"></div>
+            </div>
+            <div class="name">
+              <h4>Dr. Mesnbet Assefa</h4>
+              <p>
+                Mesenbet earned his LL.B from Bahir Dar University in 2006 and
+                graduated with distinction. He further...
+              </p>
+            </div>
+          </div>
          
         </div>
       </div>
@@ -263,20 +285,6 @@
               </p>
             </div>
           </div>
-
-        
-         
-        </div>
-      </div>
-    </section>
-
-        <section class="leader" id="additional">
-      <div class="container">
-        <h2>ADDITIONAL TEAM</h2>
-        <!-- <p> </p> -->
-        <div class="team-wrapper">
-       
-          
           <div
             class="card"
             @click="togglePopup('mesnbet')"
@@ -300,6 +308,20 @@
               </p>
             </div>
           </div>
+        
+         
+        </div>
+      </div>
+    </section>
+
+        <section class="leader" id="additional">
+      <div class="container">
+        <h2>ADDITIONAL TEAM</h2>
+        <!-- <p> </p> -->
+        <div class="team-wrapper">
+       
+          
+  
 
           <div
             class="card"

@@ -49,7 +49,7 @@ Addis Ababa, Ethiopia<br/>
                     </p>
                     <div class="icon-container">
                      <a href="#"><img src="../assets/Icons/phone.svg" alt="" /></a> 
-                      <a href="#"><img src="../assets/Icons/facebook.svg" alt="" /></a>
+                   
                      <a href="#"><img src="../assets/Icons/linkedin.svg" alt="" /></a> 
               <a href="#"><img src="../assets/Icons/mail.svg" alt="" /></a>
                     </div>
@@ -126,7 +126,7 @@ export default {
 
                   grid-template-columns: 1fr 1fr;
                   place-items: left;
-                  gap: 1.88rem;
+                
 
                   li {
                     a {
@@ -148,7 +148,7 @@ export default {
                   }
                   p {
                     color: #fff;
-                    @extend .text;
+                 line-height: 1rem;
 
                     text-align: center;
                     font-size: 0.8rem;

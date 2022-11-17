@@ -1,7 +1,7 @@
 <template>
   <div class="body-main">
     <HeaderApp />
-    <section class="description">
+    <!-- <section class="description">
       <div class="container">
         <div class="desc">
           <p>
@@ -21,8 +21,21 @@
         </div>
         <div class="hover"></div>
       </div>
+    </section> -->
+    <section class="cta">
+      <div class="container">
+        <div class="wrapper">
+          <div class="welcome">
+            <img src="../assets/Image/best.JPG" alt="">
+            <div class="desc">
+<h2>Welcome To 5A Law</h2>
+<p>Conceived and formally established by Ali, Almaw, Alemu, Amare, Dr. Mesnbet Assefa & Ashenafi (5A Jurists Consultancy Group PLC) is an aspiring full-service consultancy office in Ethiopia. With prominent lawyers and legal team that has over and above 30 years of experience in consulting and representing clients on a wide range of legal issues concerning business and investment in the country, our consultancy firm has begun to make its early influence felt on the Ethiopian legal system. We are committed to treating each of our clients with courtesy, respect and compassion regardless of the size of their case. We are a firm that will be here in the future, which we’ve guaranteed with a succession plan to maintain our exemplary service to you for decades to come.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="awards">
+    <!-- <section class="awards">
       <div class="container">
         <div
           class="circle-bg"
@@ -38,16 +51,16 @@
           <img src="../assets/Image/A1.svg" alt="" />
 
           <img src="../assets/Image/award.svg" alt="" />
-          <!-- <img src="../assets/Image/award2.svg" alt="" /> -->
+         
           <img src="../assets/Image/award2.svg" alt="" />
           <img src="../assets/Image/award3.svg" alt="" />
           <img src="../assets/Image/award4.svg" alt="" />
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="topdecor">
       <div class="left">
-        <img class="left-decor" src="../assets/Icons/leftdecor.svg" alt="" />
+     
         <img class="edge-decor1" src="../assets/Icons/edge1.svg" alt="" />
         <h2
           data-aos="fade-up"
@@ -539,58 +552,8 @@
               <img src="../assets/Icons/poll.svg" alt="" />
             </div>
           </div>
-          <div
-            class="news"
-            data-aos="slide-up"
-            data-aos-delay="100"
-            data-aos-anchor-placement="top-center"
-          >
-            <div class="title">
-              <h2>News</h2>
-            </div>
-            <div class="full-news">
-              <p>
-                1. CONSOLIDATING THE MEDIA REGULATION<br /><br />
-                The Mass Media Proclamation integrated two different areas of
-                media regulation that were governed by two different
-                legislations. Previously, access to information and the print
-                media was regulated under Proclamation 590//2008, while the
-                broadcast media was regulated under Proclamation 533/2007. 
-              </p>
-              <div class="link">
-                <a href="#">
-                  <img src="../assets/Icons/arrownext.svg" alt="" />
-                </a>
-                <p>Learn More</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="blog-post"
-            data-aos="slide-up"
-            data-aos-delay="100"
-            data-aos-anchor-placement="top-center"
-          >
-            <h2>Journal</h2>
-            <p>
-              2. DECRIMINALIZATION OF DEFAMATION <br /><br />
-              The most significant aspect of the new Mass Media Proclamation is
-              the decriminalization of defamation. The new Mass Media
-              Proclamation in Art 84 provides that defamation shall only entail
-              civil liability and shall not entail criminal responsibility. This
-              will have far reaching significance for the progress of media
-              freedom in the country. 
-            </p>
-            <div class="link">
-              <a href="#">
-                <img src="../assets/Icons/arrowwhite.svg" alt="" />
-              </a>
-              <p>Learn More</p>
-            </div>
-            <div class="bottom-poll">
-              <img src="../assets/Icons/poll.svg" alt="" />
-            </div>
-          </div>
+       
+          
         </div>
       </div>
     </section>
@@ -659,7 +622,7 @@ export default {
         nav.classList.add("fixed");
         logo.innerHTML = `<picture>
     <source media="(min-width:650px)" srcset=" ">
-    <img src="../assets/Icons/Logo.svg " class=" " alt=" " />
+    <nuxt-link to="/"><img src="../assets/Icons/Logo.svg" alt="" /></nuxt-link>
   </picture>`;
 
         if (window.innerWidth > 768) {
@@ -738,6 +701,57 @@ export default {
     background: $A-darkerblue;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     z-index: 999999;
+  }
+  .cta{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    .container{
+      .wrapper{
+        .welcome{
+          img{
+            height: 30rem;
+            width:20rem;
+            object-fit: cover;
+            @include responsive($md) {
+              height: 30rem;
+              width:25rem; 
+            }
+          }
+          .desc{
+            width: 50%;
+            h2{
+              text-transform: uppercase;
+              font-size: 3rem;
+              font-weight: 700;
+              text-align: center;
+              margin-top: 2rem;
+              margin-bottom: 2rem;
+              color: $A-darkerblue;
+              @include responsive($md) {
+                font-size: 4rem; 
+              }
+            }
+            p{
+              font-size: 1.2rem;
+              line-height: 2rem;
+              text-align: center;            
+              color: $A-darkerblue;
+           
+            }
+          }
+          @include responsive($md) {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 5rem;
+            }
+            @include responsive($xl) {
+              
+              gap: 10rem;
+            }
+        }
+      }
+    }
   }
 
   .description {
@@ -1036,7 +1050,7 @@ export default {
         display: grid;
         place-items: center;
         .container {
-          padding: 2.5rem 0 4rem;
+          padding: 2.5rem 0 .4rem;
           z-index: 9999;
           .best-content {
             // max-width: 32.69rem;
@@ -1561,8 +1575,8 @@ export default {
         .hover {
           p {
             margin-top: 8rem;
-            font-size: 1.3rem;
-            line-height: 2rem;
+            font-size: 1rem;
+            line-height: 1.3rem;
           }
         }
       }
@@ -2017,17 +2031,17 @@ export default {
         .testmonial-card {
           width: 20rem;
           margin-top: 3rem;
-          background: $A-darkerblue;
+          // background: $A-darkerblue;
           padding: 2rem;
           border-radius: 40px;
-          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+          // box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 
           p {
             margin-top: 0.94rem;
             text-align: left;
             font-size: 0.8rem;
             line-height: 1.3rem;
-            color: #e1e9f2;
+            color: $A-green;
           }
           .name {
             display: flex;
@@ -2035,7 +2049,7 @@ export default {
             margin-top: 1.5rem;
             font-size: 0.8rem;
             line-height: 1.3rem;
-            color: #e1e9f2;
+            color:$A-green;
             border-style: none;
             hr {
               width: 3rem;
@@ -2045,17 +2059,17 @@ export default {
         .testmonial-card1 {
           width: 20rem;
           margin-top: 3rem;
-          background: #fff;
+          // background: #fff;
           padding: 2rem;
           border-radius: 40px;
-          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+          // box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 
           p {
             margin-top: 0.94rem;
             text-align: left;
             font-size: 0.8rem;
             line-height: 1.3rem;
-            color: $A-darkerblue;
+            color: $A-green;
           }
           .name {
             display: flex;
@@ -2063,7 +2077,7 @@ export default {
             margin-top: 1.5rem;
             font-size: 0.8rem;
             line-height: 1.3rem;
-            color: $A-darkerblue;
+            color:$A-green;
 
             hr {
               width: 3rem;
@@ -2237,7 +2251,7 @@ export default {
           margin-right: 25rem;
         }
         .blog-post {
-          width: 25rem;
+          width: 55rem;
           p {
             margin-top: 4rem;
             font-size: 1.13rem;
